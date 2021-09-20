@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;  
+}
+
+.ceu{
+    width: 100%;
+    height: 100vh;
+    background: #0c1445;
+    overflow: hidden;
+}.ceu .estrelas{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #0c1445;
+    float: left;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}.ceu .estrelas:before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    transition: 5s ease-in-out;
+}.ceu .estrelas:hover:before{
+    transition: 0s ease-in-out;
+}.ceu .estrelas:nth-child(6n+1):hover:before, .ceu .estrelas:nth-child(6n+1):focus:before{
+    background: #fff;
+    box-shadow: 0 3 3px #fff, 0 0 10px #fff;
+}.ceu .estrelas:nth-child(6n+2):hover:before, .ceu .estrelas:nth-child(6n+2):focus:before{
+    background: #dcc022;
+    box-shadow: 0 0 3px #dcc022, 0 0 10px #dcc022;
+}.ceu .estrelas:nth-child(6n+3):hover:before, .ceu .estrelas:nth-child(6n+3):focus:before{
+    background: #f28e8e;
+    box-shadow: 0 0 3px #f28e8e, 0 0 10px #f28e8e;
+}.ceu .estrelas:nth-child(6n+4):hover:before, .ceu .estrelas:nth-child(6n+4):focus:before{
+    background: #ffcb0c;
+    box-shadow: 0 0 3px #ffcb0c, 0 0 10px #ffcb0c;
+}.ceu .estrelas:nth-child(6n+5):hover:before, .ceu .estrelas:nth-child(6n+5):focus:before{
+    background: #f83636;
+    box-shadow: 0 0 3px #f83636, 0 0 10px #f83636;
+}.ceu .estrelas:nth-child(6n+6):hover:before, .ceu .estrelas:nth-child(6n+6):focus:before{
+    background: #92f8f7;
+    box-shadow: 0 0 3px #92f8f7, 0 0 10px #92f8f7;
+}
+
+.frase{
+    position: absolute;
+    z-index: 999;
+    color: #fff;
+    margin: 25% 10%;
+    font-size: 20px;
+    font-family: Carattere;
+}
+
+img{
+    width: 150px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 999;
+    opacity: 0.3;
+    margin: 10px;
+    transform: scaleX(-1);
+}

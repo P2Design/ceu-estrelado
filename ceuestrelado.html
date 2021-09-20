@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céu Estrelado</title>
+    <link rel="stylesheet" href="ceuestrelado.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <img src="lua.png" alt="Imagem de uma lua">
+    <div class="frase"><h1>Brinque com as estrelas.</h1></div>
+    <div class="ceu"></div>
+
+    <script type="text/javascript">
+        for(var i = 1; i<=3000; i++){
+            $('.ceu').append('<div class="estrelas"></div>')
+        }
+    </script>
+</body>
+</html>
